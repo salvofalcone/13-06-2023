@@ -1,0 +1,39 @@
+@import "../../root.css";
+
+/* TODO LIST */
+.todo__ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+/* elementi todo non completati */
+.todo__li {
+  list-style-type: none;
+  text-align: center;
+  padding: 14px;
+  width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 2px solid var(--blue);
+  background-color: var(--jungle);
+}
+
+.todo__li:hover {
+  transition: all 200ms;
+}
+
+/* relativo ai todo completati */
+.done {
+  background-color: var(--pumpkin);
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.done:hover {
+  opacity: 1;
+  background-color: var(--pumpkin);
+  text-decoration: none;
+}
